@@ -149,3 +149,5 @@ It depends, but generally- only after edits and comments have been made and comp
 git push
     
 37. Walk me through Lambda's git flow.
+
+First, we fork the project. Click the download button and copy the link and use Git bash and cd to the directory the repository should be downlaoded to. use git clone command and paste the url to to repository to get repository files on your machine. Use cd commands to ge tinto the new directory. Branch the repository by using git checkout -b 'firstname-lastname'. From this point work can be done on the projext assignment. Once work is complete, use git add. to make changes ready for committing. Then, use git commit -m "Message about what was done here" in order to commit the changes. Use git push -u origin branch-name to push commits to github. Then go onto github to submit a pull request. Select your name-branch formt he dropdown box and click the new pull request button. Change from base repository to yoru forked repo. Submit pull request link on canvas.
