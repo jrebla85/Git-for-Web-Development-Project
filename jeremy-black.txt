@@ -1,0 +1,153 @@
+https://codepen.io/jrebla85/pen/JjRXxzg?editors=1100
+
+1. What is Semantic HTML? 
+
+Semantic html is html used to convey meaning like <header> or <footer>. It has no impact on the page itself, its mostly used to let yoruself and others know what section of the page they are working on.
+    
+2. What is HTML used for? 
+
+HTML is like the framing of a house, it organizes the information and makes it readable.
+    
+3. What is an attribute and where do we put it? 
+
+An html attribute provides additional information about a tag. It is put in the opening tag.
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+
+The h1 tag is typically the title of the page, and therefore should only be used once.
+    
+5. Name two tags that have required attributes
+
+<a> and <img> which require href and src respectively.
+    
+6. What do we put in the head of our HTML document? 
+
+Metadata such as the page title, location of the style sheets and etc should be located in the head.
+
+7. What is an id? 
+
+An id is a unique identifier that can be added to an html element. It is more specific than a class and takes priority.
+    
+8. What elements can I add an id to? 
+
+Any element, however an id can only be used once.
+    
+9. How many times can I use the same id on a page? 
+
+Id's may not be reused.
+    
+10. What is a class? 
+
+A class is like an ID, but is less specific and can be used in multiple html elements.
+    
+11. What elements can I add a class to? 
+
+Any element, or multiple elements and multiple times.
+    
+12. How many times can I use the same class on a page? 
+
+As many as needed.
+    
+13. How do I get my link to open in a new tab?
+
+by adding target="blank" inside the opening anchor tag.
+    
+14. What is the alt attribute in the image tag used for? 
+
+Alt attribute is used to display a specified message int he event that an image cannot be displayed. It is also used by screen readers so is useful for those who may nto be able to see the image.
+    
+15. How do I reference an id?
+
+in html you add id="whatever" to the opening tag. in css you refrence it by using #whatever
+    
+16. What is the difference between a section and a div
+
+Content in a section is grouped thematically and logically whereas a div has no special meaning.
+    
+17. What is CSS used for? 
+
+CSS is like the "paint" in the web-dev home. It is used to visually style the page.
+    
+18. How to we select an element? Example - every h2 on the page
+
+to select an element (h2) we would use: h2 {}
+    
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+A class is less specific than an ID. For instance a class could be used multiple times for section headers <h2 class="whatever> multiple times. However, with an ID it can be used only once for intance with a certain paragraph you wanted to style differently than the rest <p id="whatever>.
+    
+20. How do we select classes in CSS?
+
+classes are selected using: .classname {}
+    
+21. How do we select a p element with a single class of “human””?
+
+We would use: p .human {}
+    
+22. What is a parent child selector? When would this be useful?
+
+An example would be: div > p {} 
+It would be useful when you wanted to style paragraph elements that only appear within a div and not any p elements outside of a div. 
+    
+23. How do you select all links within a div with the class of sidebar?
+
+we would use: a .sidebar{}
+    
+24. What is a pseudo selector?
+
+it is a keyword added to a selector that specifies a state of the selected element. example- :hover
+    
+25. What do we use the change the spacing between lines?
+
+line-height
+    
+26. What do we use to change the spacing between letters?
+
+letter-spacing
+    
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+text-transform: uppercase, text-transform: lowercase, text-transform: capitalize
+    
+28. How do I add a 1px border around my div that is dotted and black?
+
+div {
+	border: 1px dotted black
+}
+    
+29. How do I select everything on the page? 
+
+* {}
+    
+30. How do I write a comment in CSS?
+
+/* Comments go here */
+    
+31. How do I find out what file I am in, when I am using the command line? 
+
+pwd
+    
+32. Using the command line - how do I see a list of files/folders in my current folder?
+
+ls
+    
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+by using: git rm filename
+you have to be careful because it doesn't ask for confirmation before deleting. It just deletes it.
+    
+34. Why should I use version control? 
+
+Because it keeps a history of changes and makes it easier to revert back to a working version should something go wrong.
+    
+35. How often should I commit to github?
+
+It depends, but generally- only after edits and comments have been made and completed.
+    
+36. What is the command we would use to push our repo up to github? 
+
+git push
+    
+37. Walk me through Lambda's git flow.
+
+First, we fork the project. Click the download button and copy the link and use Git bash and cd to the directory the repository should be downlaoded to. use git clone command and paste the url to to repository to get repository files on your machine. Use cd commands to ge tinto the new directory. Branch the repository by using git checkout -b 'firstname-lastname'. From this point work can be done on the projext assignment. Once work is complete, use git add. to make changes ready for committing. Then, use git commit -m "Message about what was done here" in order to commit the changes. Use git push -u origin branch-name to push commits to github. Then go onto github to submit a pull request. Select your name-branch formt he dropdown box and click the new pull request button. Change from base repository to yoru forked repo. Submit pull request link on canvas.
